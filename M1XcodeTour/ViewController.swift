@@ -9,18 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  
     @IBOutlet weak var valueLabel: UILabel!
     
-    
     @IBOutlet weak var inputTextField: UITextField!
-    
     
     @IBAction func resultButton(_ sender: Any) {
         let name = inputTextField.text!
         valueLabel.text = "Hello, \(name)!"
-
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
