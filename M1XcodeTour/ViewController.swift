@@ -9,13 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var viewLabel: UILabel!
+    @IBOutlet weak var valueLabel: UILabel!
     
     
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var inputTextField: UITextField!
     
     
     @IBAction func resultButton(_ sender: Any) {
+        let name = inputTextField.text!
+        valueLabel.text = "Hello, \(name)!"
+
     }
     
     
